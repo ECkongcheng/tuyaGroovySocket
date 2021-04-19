@@ -1,6 +1,6 @@
 <!--miniprogram/pages/base_function/index.wxml-->
 <view class="root">
-  <block wx:for="{{list}}" wx:for-item="item">
+  <block wx:for="{{list}}" wx:for-item="item" wx:key="name">
     <view class="list-item" data-url="{{item.url}}" bindtap="gotoOtherage">
       <view class="list-item-header">
         <view class="list-item-header-name">{{item.name}}</view>
