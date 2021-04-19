@@ -6,7 +6,7 @@
 
 <view class="common-panel-header">
   <view class="common-panel-header-block">
-    <view class="common-panel-header-dpName">{{titleItem.name}}aa</view>
+    <view class="common-panel-header-dpName">{{titleItem.name}}</view>
     <view class="common-panel-header-dpValue">{{titleItem.value}}</view>
   </view>
 </view>
@@ -24,6 +24,9 @@
 
 <view class="scroll-view">
   <block wx:if="{{isRwDpListShow}}">
+    <block>
+        <button class="btn-show-chart">电量统计</button>
+    </block>
     <block wx:for="{{rwDpList}}" wx:key="{{item.code}}" wx:for-item="item">
       <block wx:if="{{item.type === 'Boolean'}}">
         <Boolean model:isChecked="{{item.value}}" dpCode="{{item.code}}" dpName="{{item.name}}" bind:sendDp="sendDp" />

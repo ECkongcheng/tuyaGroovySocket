@@ -121,3 +121,7 @@
   width: auto;
   height: 100%;
 }
+
+.btn-show-chart {
+  background:#27c3d9;
+}
