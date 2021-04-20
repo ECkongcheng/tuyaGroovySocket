@@ -19,5 +19,6 @@
 │   ├── app.json        // 配置文件
 └── project.config.json // 项目配置文件
 ```
+![image](https://user-images.githubusercontent.com/185069/115425065-d8d70700-a231-11eb-8f46-feddda7222f7.png)
 
 This project is developed using Tuya SDK, which enables you to quickly develop branded apps connecting and controlling smart scenarios of many devices. For more information, please check Tuya Developer Website.
