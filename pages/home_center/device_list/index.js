@@ -6,7 +6,7 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {
+  data: { 
     active: 0,
     deviceList: []
   },
@@ -51,6 +51,18 @@ Page({
       default: {
         wx.navigateTo({
           url: `/pages/home_center/common_panel/index?device_id=${id}&device_name=${name}`,
+        })
+      }
+    }
+  },
+  jumpToOther({currentTarget}) {
+    const { dataset: { device } } = currentTarget
+    const { id, category, name } = device
+    switch (category) {
+      case '': break;
+      default: {
+        wx.navigateTo({
+          url: `/pages/home_center/test_component/index?device_id=${id}&device_name=${name}`,
         })
       }
     }

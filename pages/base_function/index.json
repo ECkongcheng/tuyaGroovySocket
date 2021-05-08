@@ -3,5 +3,6 @@
     "van-icon": "@vant/weapp/icon/index"
   },
   "navigationBarTitleText": "基础业务功能",
-  "navigationBarBackgroundColor": "#f8f8f8"
+  "navigationBarBackgroundColor": "#f8f8f8",
+  "navigationStyle":"default"
 }

@@ -1,9 +1,8 @@
 {
   "usingComponents": {
     "navbar": "../../../components/t_navbar/index",
-    "Boolean": "./components/Boolean/index",
-    "Enum": "./components/Enum/index",
-    "Integer": "./components/Integer/index"
+    "toast": "../../../components/t_toast/index"
   },
-  "navigationStyle": "custom"
+  "disableScroll":true
 }
+

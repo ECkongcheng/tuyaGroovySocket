@@ -4,6 +4,7 @@
     "van-circle": "@vant/weapp/circle/index",
     "van-overlay": "@vant/weapp/overlay/index"
   },
-  "navigationBarTitleText": "小程序demo",
+  "navigationStyle":"default",
+  "navigationBarTitleText": "乐随心控",
   "navigationBarBackgroundColor": "#f8f8f8"
 }

@@ -1,44 +1,21 @@
 <!--miniprogram/pages/home_center/common_panel/index.js.wxml-->
-<wxs src="./index.wxs" module="utils" />
+<import src="index.wxml"/>
 
-<image class="common-panel-backgroud" src="{{forest}}" />
-<navbar device_name="{{device_name}}" bind:jumpTodeviceEditPage="jumpTodeviceEditPage" />
-
-<view class="common-panel-header">
-  <view class="common-panel-header-block">
-    <view class="common-panel-header-dpName">{{titleItem.name}}</view>
-    <view class="common-panel-header-dpValue">{{titleItem.value}}</view>
+<view class="kg_root">
+  <toast id="toast"></toast>
+  <image class="bgImage" src="{{imgList.bgImage}}" > </image>
+  <navbar device_name="{{device_name}}"></navbar>
+  <image class="dcImage" src="{{rwDpList['switch']['value'] ? imgList.powerOn : imgList.powerOff}}" bindtap="turnDeviceOn" ></image>
+  <text class="dcLabel">{{rwDpList['switch']['value'] ? '插座已开启' : '插座已关闭'}}</text>
+  <view class="kg_footer">
+    <view bindtap="turnNoticeOn" class="f-view">
+      <image class="fImage" src="{{imgList.controller}}"></image>控制面板
+    </view>
+    <view bindtap="turnNoticeOn" class="f-view">
+      <image class="fImage" src="{{imgList.timer}}"></image>定时设置
+    </view>
+    <view bindtap="turnNoticeOn" class="f-view">
+      <image class="fImage" src="{{imgList.logger}}"></image>运行日志
+    </view>
   </view>
-</view>
-
-<block wx:if="{{isRoDpListShow}}">
-  <view class="statuslist">
-    <block wx:for="{{roDpList}}" wx:key="{{item.code}}" wx:for-item="item" wx:for-index='idx'>
-      <view class="{{utils.countDpItem(roDpListLength,idx)}}">
-        <view class="roDpItem-dpName">{{item.code}}</view>
-        <view class="roDpItem-status">{{item.value}}</view>
-      </view>
-    </block>
-  </view>
-</block>
-
-<view class="scroll-view">
-  <block wx:if="{{isRwDpListShow}}">
-    <block>
-        <button class="btn-show-chart">电量统计</button>
-    </block>
-    <block wx:for="{{rwDpList}}" wx:key="{{item.code}}" wx:for-item="item">
-      <block wx:if="{{item.type === 'Boolean'}}">
-        <Boolean model:isChecked="{{item.value}}" dpCode="{{item.code}}" dpName="{{item.name}}" bind:sendDp="sendDp" />
-      </block>
-      <block wx:if="{{item.type === 'Integer'}}">
-        <Integer model:value="{{item.value}}" values="{{item.values}}" dpCode="{{item.code}}" dpName="{{item.name}}"
-          bind:sendDp="sendDp" />
-      </block>
-      <block wx:if="{{item.type === 'Enum'}}">
-        <Enum model:value="{{item.value}}" values="{{item.values}}" dpCode="{{item.code}}" dpName="{{item.name}}"
-          bind:sendDp="sendDp" />
-      </block>
-    </block>
-  </block>
 </view>

@@ -12,18 +12,18 @@
 
 .custom-header-back {
   position: absolute;
-  left: 16px;
+  left: 32rpx;
 }
 
 .custom-header-name {
   z-index: 1;
-  width: 80px;
-  height: 25px;
+  width: 300rpx;
+  height: 50rpx;
   font-family: PingFangSC-Medium;
-  font-size: 17px;
+  font-size: 34rpx;
   text-align: center;
-  line-height: 24px;
-  color: #fff;
+  line-height: 48rpx;
+  color: #000;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

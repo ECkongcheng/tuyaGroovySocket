@@ -7,13 +7,15 @@
         "pages/cloud_check/index",
         "pages/function_center/device_connect/index",
         "pages/web_view/index",
-        "pages/base_function/index"
+    "pages/base_function/index",
+    "pages/home_center/index"
     ],
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#fff",
         "navigationBarTitleText": "WeChat",
-        "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "navigationStyle":"custom"
     },
     "plugins": {
         "tuya-ap-plugin": {
