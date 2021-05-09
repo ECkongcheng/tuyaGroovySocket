@@ -19,8 +19,8 @@
   z-index: 1;
   width: 300rpx;
   height: 50rpx;
-  font-family: PingFangSC-Medium;
-  font-size: 34rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
   text-align: center;
   line-height: 48rpx;
   color: #000;
