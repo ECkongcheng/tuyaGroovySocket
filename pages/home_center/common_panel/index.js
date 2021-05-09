@@ -114,7 +114,7 @@ Page({
             titleItem,
             roDpList,
             rwDpList,
-            device_name: name,
+            device_name: name === "智能单插联通版" ? "乐随心控" : name,
             isRoDpListShow,
             isRwDpListShow,
             roDpListLength,

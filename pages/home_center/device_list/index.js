@@ -29,9 +29,12 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: async function () {
-    const deviceList = await getDeviceList()
+    let deviceList = await getDeviceList()
     deviceList.forEach(item => {
-      item.icon = `https://images.tuyacn.com/${item.icon}`
+        item.icon = `https://images.tuyacn.com/${item.icon}`;
+        if (item.name === "智能单插联通版") {
+            item.name = "乐随心控";
+        }
     })
     this.setData({ deviceList })
   },

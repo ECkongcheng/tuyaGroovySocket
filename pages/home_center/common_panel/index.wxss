@@ -1,3 +1,8 @@
+.nav-style {
+    width: 100%;
+    background-color: #fff6;
+}
+
 .sk-transparent {
     color: transparent !important;
 }
@@ -138,4 +143,31 @@
     width: 60rpx;
     height: 60rpx;
     margin-bottom: 6rpx;
+}
+
+.s-view {
+    display: inline-block;
+    font-size: 26rpx;
+    line-height: 32rpx;
+    color: #5E676F;
+    margin: 20rpx 30rpx;
+}
+
+.sImage {
+    width: 32rpx;
+    height: 32rpx;
+    margin-right: 10rpx;
+    vertical-align: bottom;
+}
+
+.usage_container {
+    width: 90%;
+    height: 500rpx;
+    background: rgba(255, 255, 255, .6);
+    border-radius: 20rpx;
+    margin-top: 20rpx;
+}
+
+.s-chart {
+
 }
