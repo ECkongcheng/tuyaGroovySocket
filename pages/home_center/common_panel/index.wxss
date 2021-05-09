@@ -170,5 +170,5 @@
 }
 
 .s-chart {
-
+    font-size: 20rpx;
 }
