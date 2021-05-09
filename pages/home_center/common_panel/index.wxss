@@ -1,57 +1,68 @@
 .sk-transparent {
-  color: transparent !important;
+    color: transparent !important;
 }
+
 .sk-text-14-5833-882 {
-  background-image: linear-gradient(transparent 14.5833%, #EEEEEE 0%, #EEEEEE 85.4167%, transparent 0%) !important;
-  background-size: 100% 48.0000rpx;
-  position: relative !important;
+    background-image: linear-gradient(transparent 14.5833%, #EEEEEE 0%, #EEEEEE 85.4167%, transparent 0%) !important;
+    background-size: 100% 48.0000rpx;
+    position: relative !important;
 }
+
 .sk-text {
-  background-origin: content-box !important;
-  background-clip: content-box !important;
-  background-color: transparent !important;
-  color: transparent !important;
-  background-repeat: repeat-y !important;
+    background-origin: content-box !important;
+    background-clip: content-box !important;
+    background-color: transparent !important;
+    color: transparent !important;
+    background-repeat: repeat-y !important;
 }
+
 .sk-text-14-2857-619 {
-  background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
-  background-size: 100% 42.0000rpx;
-  position: relative !important;
+    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
+    background-size: 100% 42.0000rpx;
+    position: relative !important;
 }
+
 .sk-image {
-  background: #EFEFEF !important;
+    background: #EFEFEF !important;
 }
-.sk-pseudo::before, .sk-pseudo::after {
+
+.sk-pseudo::before,
+.sk-pseudo::after {
     background: #EFEFEF !important;
     background-image: none !important;
     color: transparent !important;
     border-color: transparent !important;
-  }
-.sk-pseudo-rect::before, .sk-pseudo-rect::after {
-    border-radius: 0 !important;
-  }
-.sk-pseudo-circle::before, .sk-pseudo-circle::after {
-    border-radius: 50% !important;
-  }
-.sk-container {
-  background-color: transparent;
 }
 
-  @keyframes loading-rotate {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+.sk-pseudo-rect::before,
+.sk-pseudo-rect::after {
+    border-radius: 0 !important;
+}
 
-  .sk-loading-spinner {
+.sk-pseudo-circle::before,
+.sk-pseudo-circle::after {
+    border-radius: 50% !important;
+}
+
+.sk-container {
+    background-color: transparent;
+}
+
+@keyframes loading-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.sk-loading-spinner {
     position: absolute;
     top: 50%;
     margin-top: -0.5rem;
     width: 100%;
     text-align: center;
-  }
+}
 
-  .sk-loading-spinner .circular {
+.sk-loading-spinner .circular {
     border-radius: 50%;
     width: 1rem;
     height: 1rem;
@@ -62,58 +73,69 @@
     border-bottom: solid 2px #409eff;
     border-left: solid 2px transparent;
     animation: loading-rotate 1s linear infinite;
-  }
-  
+}
+
 .kg_root {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
 }
 
 .bgImage {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100vh;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
 }
 
 .dcImage {
-  width: 400rpx;
-  height: 400rpx;
-  margin-top: 300rpx;
+    width: 400rpx;
+    height: 400rpx;
+    margin-top: 10rpx;
 }
 
 .dcLabel {
-  margin-top: 50rpx;
-  font-size: 30rpx;
-  color: #61803d;
+    margin-top: 80rpx;
+    font-size: 24rpx;
+}
+
+.dcLabel.on {
+    color: #d9d9d9;
+    text-shadow: 0.1rem 0rem 0.2rem rgba(255, 222, 0, .25), -0.1rem 0rem 0.1rem rgba(255, 222, 0, .25), 0rem 0.1rem 0.1rem rgba(255, 222, 0, .25), 0rem -0.1rem 0.1rem rgba(255, 222, 0, .25);
+}
+
+.dcLabel.off {
+    color: #d9d9d9;
 }
 
 .kg_footer {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 20rpx 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20rpx 0 10rpx;
+    background-color: rgba(255, 255, 255, .5);
 }
 
 .f-view {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 11px;
-  color: #5E676F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 11px;
+    color: #5E676F;
 }
 
-.fImage{
+.f-view.active {
+    color: #008FD7;
+}
+
+.fImage {
     width: 60rpx;
     height: 60rpx;
     margin-bottom: 6rpx;
-    fill: #5E676F;
-    color: #5E676F;
-  }
+}

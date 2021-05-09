@@ -1,14 +1,15 @@
 <!--miniprogram/pages/home_center/common_panel/index.js.wxml-->
-<import src="index.wxml"/>
+<import src="index.wxml" />
 
 <view class="kg_root">
   <toast id="toast"></toast>
-  <image class="bgImage" src="{{imgList.bgImage}}" > </image>
+  <image class="bgImage" src="{{imgList.bgImage}}"> </image>
   <navbar device_name="{{device_name}}"></navbar>
-  <image class="dcImage" src="{{rwDpList['switch']['value'] ? imgList.powerOn : imgList.powerOff}}" bindtap="turnDeviceOn" ></image>
-  <text class="dcLabel">{{rwDpList['switch']['value'] ? '插座已开启' : '插座已关闭'}}</text>
+  <text class="dcLabel {{rwDpList['switch']['value'] ? 'on' : 'off'}}">{{rwDpList['switch']['value'] ? '插座已开启' : '插座已关闭'}}</text>
+  <image class="dcImage" src="{{rwDpList['switch']['value'] ? imgList.powerOn : imgList.powerOff}}" bindtap="turnDeviceOn"></image>
+  <view class="usage_container"></view>
   <view class="kg_footer">
-    <view bindtap="turnNoticeOn" class="f-view">
+    <view bindtap="turnNoticeOn" class="f-view active">
       <image class="fImage" src="{{imgList.controller}}"></image>控制面板
     </view>
     <view bindtap="turnNoticeOn" class="f-view">
