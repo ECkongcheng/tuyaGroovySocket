@@ -10,8 +10,13 @@
   <view class="usage_container">
     <view class="s-view">
       <image class="sImage" src="{{imgList.statistics}}"></image>电量统计
+      <button bindtap="byMonth" class="s-month">今年</button>
+      <button bindtap="byDay" class="s-day">本月</button>
+      <button bindtap="byHour" class="s-hour">今天</button>
     </view>
-    <view class="s-chart"></view>
+    <view class="s-chart">
+      <canvas canvas-id="columnCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler" bindtouchmove="moveHandler" bindtouchend="touchEndHandler"></canvas>
+    </view>
   </view>
   <view class="kg_footer">
     <view class="f-view active">
